@@ -1,4 +1,4 @@
-#Football transfers SNA app
+# Football transfers SNA app
 
 This Shiny app was made as part of SNA project. It visualizes football transfers from top 5 European leagues in 2 distinct periods.
 
