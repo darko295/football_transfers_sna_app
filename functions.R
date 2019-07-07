@@ -16,27 +16,18 @@ compute_centrality_measures <- function(df){
   in_degree <- as.data.frame(degree(g, mode = "in"))
   out_degree <- as.data.frame(degree(g, mode = "out"))
   total_degree <- as.data.frame(degree(g, mode = "total"))
-<<<<<<< HEAD
-  closeness <- as.data.frame(round(closeness(g,mode = "all"),2))
-=======
->>>>>>> Initial commit
   betweenness <- as.data.frame(round(betweenness(g, directed = T),2))
   
   in_degree$Club <- row.names(in_degree)
   out_degree$Club <- row.names(out_degree)
   total_degree$Club <- row.names(total_degree)
-<<<<<<< HEAD
-  closeness$Club <- row.names(closeness)
-  betweenness$Club <- row.names(betweenness)
-
-  m_df <- merge(merge(merge(merge(in_degree,out_degree,by="Club"),total_degree,by="Club"),closeness,by="Club"),betweenness,by="Club")
-  colnames(m_df) <- c("ID","in_degree","out_degree","total_degree","closeness","betweenness")
-=======
   betweenness$Club <- row.names(betweenness)
 
   m_df <- merge(merge(merge(in_degree,out_degree,by="Club"),total_degree,by="Club"),betweenness,by="Club")
   colnames(m_df) <- c("ID","in_degree","out_degree","total_degree","betweenness")
->>>>>>> Initial commit
+
+  betweenness$Club <- row.names(betweenness)
+
   m_df$ID <- as.integer(m_df$ID)
   m_df
   
@@ -117,7 +108,6 @@ attr_based_color_gradient <- function(g_attr, pal_end_points) {
   g_colors = col_palette(col_resolution)[as.numeric(cut(value_vector, breaks=col_resolution))]
   return(g_colors)
 }
-<<<<<<< HEAD
 
 #computing graph info by division by year f
 compute_graph_info_by_div_year <- function(df,div,year=2004){
@@ -232,5 +222,4 @@ compute_interactions <- function(df){
   dist <- data.frame(eng_eng,spa_spa,ita_ita,ger_ger,fra_fra,eng_spa,eng_ita,eng_ger,eng_fra,spa_ita,spa_ger,spa_fra,ita_ger,ita_fra,ger_fra)
   dist <- as.data.frame(t(dist))
 }
-=======
->>>>>>> Initial commit
+
