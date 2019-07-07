@@ -1,0 +1,227 @@
+"Division","ID","Club","Year_F"
+"England",1,"Arsenal",2004
+"England",2,"Aston Villa",2004
+"England",3,"Birmingham City",2004
+"England",4,"Blackburn",2004
+"England",5,"Bolton Wanderers",2004
+"England",6,"Charlton",2004
+"England",7,"Chelsea",2004
+"England",8,"Crystal Palace",2004
+"England",9,"Everton",2004
+"England",10,"Fulham",2004
+"England",11,"Liverpool",2004
+"England",12,"Manchester City",2004
+"England",13,"Man United",2004
+"England",14,"Middlesbrough",2004
+"England",15,"Newcastle United",2004
+"England",16,"Norwich City",2004
+"England",17,"Portsmouth",2004
+"England",18,"Southampton",2004
+"England",19,"Tottenham",2004
+"England",20,"WBA",2004
+"Spain",21,"Albacete",2004
+"Spain",22,"Athletic Bilbao",2004
+"Spain",23,"Atlético Madrid",2004
+"Spain",24,"Real Betis",2004
+"Spain",25,"Depor",2004
+"Spain",26,"Espanyol",2004
+"Spain",27,"FC Barcelona",2004
+"Spain",28,"Sevilla FC",2004
+"Spain",29,"Valencia CF",2004
+"Spain",30,"Getafe",2004
+"Spain",31,"Levante",2004
+"Spain",32,"Mallorca",2004
+"Spain",33,"Málaga",2004
+"Spain",34,"Numancia",2004
+"Spain",35,"Osasuna",2004
+"Spain",36,"Racing Santander",2004
+"Spain",37,"Real Madrid",2004
+"Spain",38,"Real Zaragoza",2004
+"Spain",39,"Real Sociedad",2004
+"Spain",40,"Villarreal",2004
+"Italy",41,"AC Milan",2004
+"Italy",42,"AS Roma",2004
+"Italy",43,"Atalanta",2004
+"Italy",44,"Bologna",2004
+"Italy",45,"Brescia",2004
+"Italy",46,"Cagliari",2004
+"Italy",47,"Chievo Verona",2004
+"Italy",48,"Fiorentina",2004
+"Italy",49,"Inter Milan",2004
+"Italy",50,"Juventus",2004
+"Italy",51,"Lazio",2004
+"Italy",52,"Lecce",2004
+"Italy",53,"Livorno",2004
+"Italy",54,"Messina",2004
+"Italy",55,"Palermo",2004
+"Italy",56,"Parma",2004
+"Italy",57,"Reggina",2004
+"Italy",58,"Sampdoria",2004
+"Italy",59,"Siena",2004
+"Italy",60,"Udinese",2004
+"France",61,"AC Ajaccio",2004
+"France",62,"Auxerre",2004
+"France",63,"Bastia",2004
+"France",64,"Bordeaux",2004
+"France",65,"Caen",2004
+"France",66,"Istres",2004
+"France",67,"Lens",2004
+"France",68,"Lille",2004
+"France",69,"Lyon",2004
+"France",70,"Marseille",2004
+"France",71,"Metz",2004
+"France",72,"Monaco",2004
+"France",73,"Nantes",2004
+"France",74,"Nice",2004
+"France",75,"Paris S-G",2004
+"France",76,"Rennes",2004
+"France",77,"Saint-Etienne",2004
+"France",78,"Sochaux",2004
+"France",79,"Strasbourg",2004
+"France",80,"Toulouse FC",2004
+"Germany",81,"Bielefeld",2004
+"Germany",82,"Bayer Leverkusen",2004
+"Germany",83,"Bayern Munich",2004
+"Germany",84,"Bochum",2004
+"Germany",85,"Dortmund",2004
+"Germany",86,"M'gladbach",2004
+"Germany",87,"Freiburg",2004
+"Germany",88,"Hamburger SV",2004
+"Germany",89,"Hannover 96",2004
+"Germany",90,"Hansa Rostock",2004
+"Germany",91,"Hertha Berlin",2004
+"Germany",92,"Kaiserslautern",2004
+"Germany",93,"Mainz",2004
+"Germany",94,"FC Nürnberg",2004
+"Germany",95,"Schalke 04",2004
+"Germany",96,"Stuttgart",2004
+"Germany",97,"Werder Bremen",2004
+"Germany",98,"Wolfsburg",2004
+"Other",99,"Brazil",2004
+"Other",100,"Netherlands",2004
+"Other",101,"Scotland",2004
+"Other",102,"Switzerland",2004
+"Other",103,"Belgium",2004
+"Other",104,"Turkey",2004
+"Other",105,"Argentina",2004
+"Other",106,"Portugal",2004
+"Other",107,"Austria",2004
+"Other",108,"Greece",2004
+"Other",109,"Mexico",2004
+"Other",110,"Norway",2004
+"Other",111,"United States",2004
+"Other",112,"Denmark",2004
+"Other",113,"Russia",2004
+"Other",114,"Serbia",2004
+"England",1,"Arsenal",2018
+"England",2,"Bournemouth",2018
+"England",3,"Brighton & Hove",2018
+"England",4,"Burnley",2018
+"England",5,"Cardiff City",2018
+"England",6,"Chelsea",2018
+"England",7,"Crystal Palace",2018
+"England",8,"Everton",2018
+"England",9,"Fulham",2018
+"England",10,"Huddersfield",2018
+"England",11,"Leicester",2018
+"England",12,"Liverpool",2018
+"England",13,"Manchester City",2018
+"England",14,"Man United",2018
+"England",15,"Newcastle United",2018
+"England",16,"Southampton",2018
+"England",17,"Tottenham",2018
+"England",18,"Watford",2018
+"England",19,"West Ham",2018
+"England",20,"Wolverhampton",2018
+"Spain",21,"Alavés",2018
+"Spain",22,"Athletic Bilbao",2018
+"Spain",23,"Atlético Madrid",2018
+"Spain",24,"Real Betis",2018
+"Spain",25,"Celta Vigo",2018
+"Spain",26,"Eibar",2018
+"Spain",27,"Espanyol",2018
+"Spain",28,"FC Barcelona",2018
+"Spain",29,"Sevilla FC",2018
+"Spain",30,"Valencia CF",2018
+"Spain",31,"Girona",2018
+"Spain",32,"Getafe",2018
+"Spain",33,"Huesca",2018
+"Spain",34,"Leganés",2018
+"Spain",35,"Levante",2018
+"Spain",36,"Rayo Vallecano",2018
+"Spain",37,"Real Madrid",2018
+"Spain",38,"Real Sociedad",2018
+"Spain",39,"Valladolid",2018
+"Spain",40,"Villarreal",2018
+"Italy",41,"AC Milan",2018
+"Italy",42,"AS Roma",2018
+"Italy",43,"Atalanta",2018
+"Italy",44,"Bologna",2018
+"Italy",45,"Cagliari",2018
+"Italy",46,"Chievo Verona",2018
+"Italy",47,"Empoli",2018
+"Italy",48,"Fiorentina",2018
+"Italy",49,"Frosinone",2018
+"Italy",50,"Genoa",2018
+"Italy",51,"Inter Milan",2018
+"Italy",52,"Juventus",2018
+"Italy",53,"Lazio",2018
+"Italy",54,"Napoli",2018
+"Italy",55,"Parma",2018
+"Italy",56,"Sampdoria",2018
+"Italy",57,"Sassuolo",2018
+"Italy",58,"SPAL",2018
+"Italy",59,"Torino",2018
+"Italy",60,"Udinese",2018
+"France",61,"Amiens",2018
+"France",62,"Angers",2018
+"France",63,"Bordeaux",2018
+"France",64,"Caen",2018
+"France",65,"Dijon",2018
+"France",66,"Guingamp",2018
+"France",67,"Lille",2018
+"France",68,"Lyon",2018
+"France",69,"Marseille",2018
+"France",70,"Monaco",2018
+"France",71,"Montpellier",2018
+"France",72,"Nantes",2018
+"France",73,"Nice",2018
+"France",74,"Nîmes",2018
+"France",75,"Paris S-G",2018
+"France",76,"Reims",2018
+"France",77,"Rennes",2018
+"France",78,"Saint-Etienne",2018
+"France",79,"Strasbourg",2018
+"France",80,"Toulouse FC",2018
+"Germany",81,"Augsburg",2018
+"Germany",82,"Bayer Leverkusen",2018
+"Germany",83,"Bayern Munich",2018
+"Germany",84,"Dortmund",2018
+"Germany",85,"M'gladbach",2018
+"Germany",86,"Düsseldorf",2018
+"Germany",87,"E Francfort",2018
+"Germany",88,"Freiburg",2018
+"Germany",89,"Hannover 96",2018
+"Germany",90,"Hertha Berlin",2018
+"Germany",91,"Hoffenheim",2018
+"Germany",92,"Mainz",2018
+"Germany",93,"FC Nürnberg",2018
+"Germany",94,"RB Leipzig",2018
+"Germany",95,"Schalke 04",2018
+"Germany",96,"Stuttgart",2018
+"Germany",97,"Werder Bremen",2018
+"Germany",98,"Wolfsburg",2018
+"Other",99,"China",2018
+"Other",100,"Belgium",2018
+"Other",101,"Portugal",2018
+"Other",102,"Turkey",2018
+"Other",103,"Brazil",2018
+"Other",104,"Netherlands",2018
+"Other",105,"Argentina",2018
+"Other",106,"Switzerland",2018
+"Other",107,"Croatia",2018
+"Other",108,"Denmark",2018
+"Other",109,"Russia",2018
+"Other",110,"Austria",2018
+"Other",111,"Sweden",2018
+"Other",112,"Wales",2018
