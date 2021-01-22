@@ -45,6 +45,7 @@ compute_other_measures <- function(df,club_df){
   
   transfer_balance[is.na(transfer_balance)] <- 0
   transfer_balance$profit_loss <- transfer_balance$earned - transfer_balance$spent
+  transfer_balance$total_activity <- transfer_balance$earned + transfer_balance$spent
   
   #DOMESTIC PERCENT
   dt_perc <- compute_domestic_transfer_percent(df,club_df)

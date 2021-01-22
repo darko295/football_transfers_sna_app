@@ -30,7 +30,7 @@ shinyServer(function(input, output) {
     measures <- compute_measures(df,club_df)
     club_df <- join(club_df, measures, by="ID")
     
-    
+    if(input$node_color == "division"){
     
     nodes <- data.frame(id = club_df$ID,
                         value = club_df[,size],
@@ -91,6 +91,58 @@ shinyServer(function(input, output) {
                     Shiny.onInputChange('current_node_id', nodes.nodes);
                     ;}") %>%
           visPhysics(solver = "repulsion", repulsion = list(nodeDistance = 50))
+      })
+    }
+    }else{
+      g1 <- graph_from_data_frame(df %>% select(ClubFromID,ClubToID,Amount),vertices = club_df$ID)
+      E(g1)$amount <- df$Amount
+      V(g1)$earned <- club_df$earned
+      V(g1)$spent <- club_df$spent
+      V(g1)$tot_activity <- club_df$earned + club_df$spent
+      V(g1)$profit_loss <- club_df$profit_loss
+      V(g1)$out_degree <- club_df$out_degree
+      V(g1)$in_degree <- club_df$in_degree
+      V(g1)$total_degree <- club_df$total_degree
+      V(g1)$betweenness <- club_df$betweenness
+      V(g1)$domestic <- club_df$Domestic
+      
+      # sp_col_palette = attr_based_color_gradient(V(g1)$betweenness , 
+      #                                            c('yellow','red','purple')) 
+      
+      sp_col_palette <- switch (input$node_color,
+        "in_degree" = attr_based_color_gradient(V(g1)$in_degree , 
+                                                c('yellow','red')),
+        "out_degree" = attr_based_color_gradient(V(g1)$out_degree , 
+                                                c('yellow','red')),
+        "total_degree" = attr_based_color_gradient(V(g1)$total_degree , 
+                                                c('yellow','red')),
+        "earned" = attr_based_color_gradient(V(g1)$earned , 
+                                                c('yellow','red')),
+        "spent" = attr_based_color_gradient(V(g1)$spent , 
+                                                c('yellow','red')),
+        "betweenness" = attr_based_color_gradient(V(g1)$betweenness , 
+                                                c('yellow','red','purple')),
+        "total_activity" = attr_based_color_gradient(V(g1)$tot_activity , 
+                                                c('yellow','red'))
+        
+      )  
+      
+      
+      V(g1)$color <- sp_col_palette
+      V(g1)$size <- V(g1)$total_degree*5
+      V(g1)$title <- club_df$Club
+      V(g1)$name <- club_df$Club
+      V(g1)$group <- club_df$Division
+      output$full_graph <- renderVisNetwork({
+      visIgraph(g1) %>%
+        visOptions(highlightNearest = list(enabled = T, degree = 0.5),selectedBy = "group") %>%
+        visIgraphLayout(layout = input$layout) %>%
+        visEvents(type = "once", startStabilizing = "function() {
+            this.moveTo({scale:0.4})}") %>%
+        visEvents(select = "function(nodes) {
+                Shiny.onInputChange('current_node_id', nodes.nodes);
+                ;}") %>%
+        visPhysics(stabilization = F ,solver = "repulsion", repulsion = list(nodeDistance = 110))
       })
     }
     graph_info <- compute_graph_info(df %>% select(ClubFromID,ClubToID))
@@ -255,10 +307,16 @@ shinyServer(function(input, output) {
     measures <- compute_measures(df,club_df)
     club_df <- join(club_df, measures, by="ID")
     
-    print(paste0("SELECTED NODES:",input$current_node_id))
+    node_id <- input$current_node_id
+    print(paste0("SELECTED NODES:",node_id))
+    
+    if(input$node_color != "division"){
+      node_id <- club_df$ID[club_df$Club == node_id]
+      print(paste0("NODE ID IN IF:",node_id))
+    }
     
     output$selected_club_dt <- DT::renderDataTable({
-      datatable(t(club_df %>% filter(ID %in% input$current_node_id & Year_F == input$year) %>%
+      datatable(t(club_df %>% filter(ID %in% node_id & Year_F == input$year) %>%
                     select(-ID, -Year_F)), caption = "Last selected club info", colnames = c("Node param","Value"),
                 options = list(autoWidth = TRUE, searching = FALSE, scrollX = F, bPaginate= FALSE,
                                dom = 'Bt', buttons = list(
